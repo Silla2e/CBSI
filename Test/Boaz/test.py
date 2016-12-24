@@ -1,4 +1,3 @@
-import numpy
 import cv2
 import random as randint
 
@@ -8,10 +7,9 @@ while (cap.isOpened()):
     ret,img = cap.read()
 
     ret, frame = cap.read()
-    cv2.imshow('img1', frame)  # display the captured image
-    if cv2.waitKey(0) & 0xFF == ord('y'):  # save on pressing 'y'
-        cv2.imwrite('images/c'+str(randint(0, 1000000)) + '.png', frame)
-        cv2.destroyAllWindows()
+    cv2.imshow('img1', frame)
+    if cv2.waitKey(0) & 0xFF == ord('y'):
+        cv2.imwrite('/CBSI/Test/Boaz/images/c87.png', frame)
         break
     break
 
