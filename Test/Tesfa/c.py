@@ -1,8 +1,11 @@
 import cv2 
 import numpy as np
 
-image1 = cv2.imread("ph_0.png")
-image2 = cv2.imread("ph_1.png")
+image1 = cv2.imread("fb.jpg")
+image2 = cv2.imread("watch.jpg")
+
+
+cv2.imshow('img', image1)
 
 difference = cv2.subtract(image1, image2)
 
